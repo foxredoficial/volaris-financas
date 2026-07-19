@@ -1,0 +1,61 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Broken Outer Circle Frame (Top portion) -->
+    <path
+        android:strokeWidth="2.5"
+        android:strokeColor="#D0BCFF"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M 32,32 A 31,31 0 0 1 76,32" />
+
+    <!-- Broken Outer Circle Frame (Bottom portion) -->
+    <path
+        android:strokeWidth="2.5"
+        android:strokeColor="#7F67BE"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M 76,76 A 31,31 0 0 1 32,76" />
+
+    <!-- Letter V (Left arm) -->
+    <path
+        android:fillColor="#7F67BE"
+        android:pathData="M 28,38 L 44,78 L 52,78 L 36,38 Z" />
+
+    <!-- Letter V (Right arm, transitioning upward) -->
+    <path
+        android:fillColor="#D0BCFF"
+        android:pathData="M 44,78 L 56,50 L 64,50 L 48,78 Z" />
+
+    <!-- Letter F (Vertical stem) -->
+    <path
+        android:fillColor="#7F67BE"
+        android:pathData="M 54,50 L 51,74 L 57,74 L 60,50 Z" />
+
+    <!-- Letter F (Top wave/bar) -->
+    <path
+        android:fillColor="#D0BCFF"
+        android:pathData="M 54,44 C 64,44 72,40 82,38 C 82,42 80,48 76,50 C 68,50 62,50 54,50 Z" />
+
+    <!-- Letter F (Middle bar) -->
+    <path
+        android:fillColor="#D0BCFF"
+        android:pathData="M 57,56 C 64,56 68,54 74,52 C 74,55 72,59 69,60 C 64,60 61,59 57,58 Z" />
+
+    <!-- Ascending Financial Trend Line (Zig-zag) -->
+    <path
+        android:strokeWidth="3.5"
+        android:strokeColor="#EADDFF"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M 34,74 L 46,62 L 52,68 L 66,52" />
+
+    <!-- Trend Line Arrowhead pointing Northeast -->
+    <path
+        android:fillColor="#EADDFF"
+        android:pathData="M 68,50 L 58,52 L 66,60 Z" />
+</vector>
