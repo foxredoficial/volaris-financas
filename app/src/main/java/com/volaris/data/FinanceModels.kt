@@ -1,4 +1,4 @@
-package com.example.data
+package com.volaris.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -85,6 +85,22 @@ data class WeeklyChallenge(
     val isClaimed: Boolean = false,
     val challengeType: String, // "DELIVERY", "SAVINGS", "BUDGET_LIMIT", "BILL_PAYMENT"
     val deadlineTimestamp: Long = System.currentTimeMillis() + (7 * 24 * 60 * 60 * 1000L) // 1 week from now
+)
+
+data class CategoryComparison(
+    val category: String,
+    val previousYearAmount: Double,
+    val currentYearAmount: Double,
+    val difference: Double,
+    val percentageChange: Double
+)
+
+data class AnnualAnalysis(
+    val totalCurrentYear: Double,
+    val totalPreviousYear: Double,
+    val comparisons: List<CategoryComparison>,
+    val maxGrowth: CategoryComparison?,
+    val maxReduction: CategoryComparison?
 )
 
 

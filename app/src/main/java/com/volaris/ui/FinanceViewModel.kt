@@ -1,4 +1,4 @@
-package com.example.ui
+package com.volaris.ui
 
 import android.content.Context
 import android.content.Intent
@@ -6,7 +6,7 @@ import androidx.core.content.FileProvider
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
-import com.example.data.*
+import com.volaris.data.*
 import java.io.File
 import java.io.FileWriter
 import java.text.SimpleDateFormat
@@ -1192,7 +1192,7 @@ class FinanceViewModel(private val repository: FinanceRepository) : ViewModel() 
     private val _isMonthlySummaryLoading = MutableStateFlow(false)
     val isMonthlySummaryLoading: StateFlow<Boolean> = _isMonthlySummaryLoading.asStateFlow()
 
-    fun getMonthlyTextualSummary(apiKey: String = com.example.BuildConfig.GEMINI_API_KEY) {
+    fun getMonthlyTextualSummary(apiKey: String = com.volaris.BuildConfig.GEMINI_API_KEY) {
         if (_isMonthlySummaryLoading.value) return
         _isMonthlySummaryLoading.value = true
         _monthlySummary.value = null
@@ -1382,7 +1382,7 @@ class FinanceViewModel(private val repository: FinanceRepository) : ViewModel() 
     private val _isAiLoading = MutableStateFlow(false)
     val isAiLoading: StateFlow<Boolean> = _isAiLoading.asStateFlow()
 
-    fun getAiFinancialAdvice(apiKey: String = com.example.BuildConfig.GEMINI_API_KEY) {
+    fun getAiFinancialAdvice(apiKey: String = com.volaris.BuildConfig.GEMINI_API_KEY) {
         if (_isAiLoading.value) return
         _isAiLoading.value = true
         _aiResponse.value = null
@@ -1600,7 +1600,7 @@ class FinanceViewModel(private val repository: FinanceRepository) : ViewModel() 
         }
     }
 
-    fun sendChatUserMessage(userText: String, apiKey: String = com.example.BuildConfig.GEMINI_API_KEY) {
+    fun sendChatUserMessage(userText: String, apiKey: String = com.volaris.BuildConfig.GEMINI_API_KEY) {
         if (userText.isBlank() || _isChatLoading.value) return
 
         val userMsg = ChatMessage(text = userText, isUser = true)

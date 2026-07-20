@@ -1,4 +1,4 @@
-package com.example
+package com.volaris
 
 import org.junit.Assert.*
 import org.junit.Test

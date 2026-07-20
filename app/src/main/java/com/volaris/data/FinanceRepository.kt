@@ -1,4 +1,4 @@
-package com.example.data
+package com.volaris.data
 
 import kotlinx.coroutines.flow.Flow
 
